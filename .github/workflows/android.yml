@@ -19,17 +19,13 @@ jobs:
         java-version: '17'
         cache: 'gradle'
 
-    - name: Dar permisos de ejecución a Gradle
+    - name: Dar permisos a Gradle
       run: chmod +x gradlew
 
-    - name: Aceptar licencias de Android SDK
-      run: |
-        mkdir -p $ANDROID_SDK_ROOT/licenses
-        echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" > $ANDROID_SDK_ROOT/licenses/android-sdk-license
-        echo "d56f5187479451eabf01fb78af6dfcb131a648af" >> $ANDROID_SDK_ROOT/licenses/android-sdk-license
-
-    - name: Compilar APK en modo Debug
-      run: ./gradlew assembleDebug
+    - name: Compilar con Gradle Build Action
+      uses: gradle/gradle-build-action@v3
+      with:
+        arguments: assembleDebug
 
     - name: Guardar APK generado
       uses: actions/upload-artifact@v4
