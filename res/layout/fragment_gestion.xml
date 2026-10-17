@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestion de Funciones"
+            android:textColor="@color/text_white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personaliza tu experiencia J Tools"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Funciones Principales -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_neon"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚙️ FUNCIONES PRINCIPALES"
+                android:textColor="@color/neon_blue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Activar Boton Flotante -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Activar Boton Flotante"
+                    android:textColor="@color/text_white"
+                    android:textSize="15sp" />
+
+                <Switch
+                    android:id="@+id/switch_activar_boton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <!-- Control de Transparencia -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control de Transparencia"
+                android:textColor="@color/text_white"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_transparencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="65"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Posicion del Boton -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posicion del Boton"
+                android:textColor="@color/text_white"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/btn_pos_izq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/bg_dark"
+                    android:text="Izquierda"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btn_pos_der"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:backgroundTint="@color/bg_dark"
+                    android:text="Derecha"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btn_pos_cen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/neon_blue"
+                    android:text="Centro"
+                    android:textColor="@color/bg_dark"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- Opciones de auto-ocultar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Opciones de auto-ocultar"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/switch_auto_ocultar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Añadir Nuevas Funciones -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANADIR NUEVAS FUNCIONES"
+            android:textColor="@color/neon_blue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proximamente"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- TikTok Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_neon"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TikTok"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:backgroundTint="@color/bg_dark"
+                android:enabled="false"
+                android:text="Próximamente"
+                android:textColor="@color/text_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Discord Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_neon"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Discord"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:backgroundTint="@color/bg_dark"
+                android:enabled="false"
+                android:text="Próximamente"
+                android:textColor="@color/text_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Instagram Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_neon"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Instagram"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:backgroundTint="@color/bg_dark"
+                android:enabled="false"
+                android:text="Próximamente"
+                android:textColor="@color/text_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Telegram Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_neon"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Telegram"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:backgroundTint="@color/bg_dark"
+                android:enabled="false"
+                android:text="Próximamente"
+                android:textColor="@color/text_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
